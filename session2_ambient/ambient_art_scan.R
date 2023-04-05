@@ -14,7 +14,6 @@ library(ambient)
 
 # custom functions for ambient art
 source('session2_ambient/ambient_art_functions.R')
-source('colour_palettes.R')
 
 # Directories ------------------------------------------------------------------
 
@@ -78,8 +77,8 @@ for (i in 1:n) {
 # Examples ---------------------------------------------------------------------
 
 # seed for selecting parameters
-# examples are 16, 74, 91, 107, 115
-example_seed <- 115
+# examples are 16, 74, 91, 107, 115, 169, 256
+example_seed <- 169
 
 # make directory for saving
 save_dir <- file.path(session_dir, example_plot_dir)
@@ -108,13 +107,17 @@ canvas <- worley_and_wave_canvas(
 )
 
 
-# colours 
+# colours (depend on seed)
+source('colour_palettes.R')
+
 if (example_seed == 16) {
   pal <- my_palettes(2)
 } else if (example_seed == 74) {
   pal <- rev(my_palettes(2))
-} else if (example_seed == 107) {
-  pal <- rev(my_palettes(4))
+} else if (example_seed == 169) {
+  pal <- my_palettes(4)
+} else if (is.element(example_seed, c(115, 256))) {
+  pal <- my_palettes(5)
 } else {
   pal <- my_palettes(1)
 }
@@ -127,8 +130,8 @@ fname <- paste(formatC(example_seed, width = 4, format = 'd', flag = '0'),
                '.png', sep = '')
 ggsave(file.path(save_dir, fname),
        dpi = 'print',
-       width = 4,
-       height = 4)
+       width = 3,
+       height = 3)
        
 #--------------------------------------------------------------------------
 
