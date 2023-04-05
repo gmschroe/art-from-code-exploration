@@ -6,7 +6,7 @@ Each folder corresponds to one of the tutorial sessions:
 
 ### session2_ambient
 
-Uses the pattern and noise generators in the ambient package. My implementation combines Worley noise and waves, with parameters that control the frequencies, noise seeds, waves location, and contribution of the waves to the final pattern. Example outputs:
+Uses the pattern and noise generators in the ambient package. My implementation combines Worley noise and waves, with settings that control the frequencies, noise seeds, where waves begin, and how much the waves contribute to the final pattern. Some example outputs:
 
-<img src="/session2_ambient/examples/0016.png" width="300">   <img src="/session2_ambient/examples/0091.png" width="300"> 
-
+<img src="/session2_ambient/examples/0074.png" width="300"> <img src="/session2_ambient/examples/0107.png" width="300"> 
+<img src="/session2_ambient/examples/0256.png" width="300"> <img src="/session2_ambient/examples/0169.png" width="300"> 
