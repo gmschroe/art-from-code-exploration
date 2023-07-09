@@ -1,6 +1,6 @@
 # Art from Code Exploration
 
-R code that explores the concepts in the [Art from Code](https://art-from-code.netlify.app) generative art tutorial by Danielle Navarro.
+R code that explores the concepts in the [Art from Code](https://art-from-code.netlify.app) generative art tutorial by Danielle Navarro Her code is licensed under a [Creative Commons Attribution 4.0 International License](https://github.com/rstudio-conf-2022/art-from-code/blob/main/LICENSE.md).
 
 Each folder corresponds to one of the tutorial sessions:
 
