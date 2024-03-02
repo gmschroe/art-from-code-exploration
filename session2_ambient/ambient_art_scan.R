@@ -78,7 +78,7 @@ for (i in 1:n) {
 
 # seed for selecting parameters
 # examples are 16, 74, 91, 107, 115, 169, 256
-example_seed <- 169
+example_seed <- 256
 
 # make directory for saving
 save_dir <- file.path(session_dir, example_plot_dir)
